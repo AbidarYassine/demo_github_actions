@@ -1,4 +1,4 @@
-yname: Demo Github Actions
+name: Demo Github Actions
 on:
   push:
     branches: [main]
@@ -19,3 +19,4 @@ jobs:
         run: chmod +x mvnw
       - name: Build Tools
         run: mvn verify
+      
