@@ -20,7 +20,7 @@ jobs:
       - name: Run All Test
         run: mvn verify
       - name: Build Project 
-        run: mvn -f clean package
+        run: mvn package
       - uses: mr-smithers-excellent/docker-build-push@v5
         name: Build & push Docker Image
         with:
